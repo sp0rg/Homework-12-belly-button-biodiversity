@@ -18,8 +18,8 @@ function buildMetadata(sample) {
       var row = sample_metadata.append("p");
       row.text(`${key}:${value}`);
 
-    })
-  })
+    });
+  });
 
     // BONUS: Build the Gauge Chart
     // buildGauge(data.WFREQ);
@@ -79,8 +79,8 @@ function buildCharts(sample) {
 
       // ties to pie div in index.html
       Plotly.newPlot('pie',data);
-    }];
-  }];
+    });
+  });
 };
 
 function init() {
